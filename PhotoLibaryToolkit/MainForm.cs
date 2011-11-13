@@ -1,35 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
-namespace PhotoLibaryToolkit
+﻿namespace PhotoLibaryToolkit
 {
-    using System.IO;
-    using PhotoLibaryToolkit.Framework;
+    using System;
+    using System.ComponentModel;
+    using System.Windows.Forms;
+    using Framework;
 
     public partial class MainForm : Form
     {
-        private Toolkit m_toolkit;
-        private IPersistanceProvider<MainFormSettings> m_sessionSaver;
+        private readonly Toolkit _toolkit;
+        private readonly IPersistanceProvider<MainFormSettings> _sessionSaver;
 
         public MainForm()
         {
             InitializeComponent();
 
-            m_toolkit = new Toolkit(new LambdaLogger(LogToListBox));
-            m_sessionSaver = new IsolatedStorageProvider<MainFormSettings>();
+            _toolkit = new Toolkit(new LambdaLogger(LogToListBox));
+            _sessionSaver = new IsolatedStorageProvider<MainFormSettings>();
         }
 
-        private void btnCloneModifyDates_Click(object sender, EventArgs e)
+        public bool PerformRenamingReview(PhotoLibraryMap dataSource)
         {
-            CleanListBoxLog();
-
-            m_toolkit.CloneModificationDates(txtSourcePathForClone.Text, txtSourceExtensionForClone.Text, txtTargetPathForClone.Text, txtTargetExtensionForClone.Text);
+            return new RenamePreview(dataSource).ShowDialog() == DialogResult.OK;
         }
 
         private void CleanListBoxLog()
@@ -43,6 +34,12 @@ namespace PhotoLibaryToolkit
 
         private void LogToListBox(string logEntry)
         {
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action<string>(LogToListBox), logEntry);
+                return;
+            }
+
             lock (lbLog)
             {
                 lbLog.Items.Insert(0, logEntry);   
@@ -50,9 +47,17 @@ namespace PhotoLibaryToolkit
             Application.DoEvents();
         }
 
+        private void ChooseFolderFor(Action<string> setTargetFieldValue)
+        {
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                setTargetFieldValue(folderBrowserDialog.SelectedPath);
+            }
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
-            MainFormSettings settings = m_sessionSaver.Load();
+            MainFormSettings settings = _sessionSaver.Load();
             if (settings != null)
             {
                 txtSourcePathForClone.Text = settings.SourcePathForClone;
@@ -80,7 +85,7 @@ namespace PhotoLibaryToolkit
                 settings.IncludeSubfolders = chkIncludeSubfolders.Checked;
                 settings.ReviewBeforeApplying = chkReviewBeforeApplying.Checked;
 
-                m_sessionSaver.Save(settings);
+                _sessionSaver.Save(settings);
             }
         }
 
@@ -97,22 +102,33 @@ namespace PhotoLibaryToolkit
             public bool ReviewBeforeApplying { get; set; }
         }
 
+        private void btnCloneModifyDates_Click(object sender, EventArgs e)
+        {
+            CleanListBoxLog();
+
+            _toolkit.CloneModificationDates(txtSourcePathForClone.Text, txtSourceExtensionForClone.Text, txtTargetPathForClone.Text, txtTargetExtensionForClone.Text);
+        }
+
         private void btnOrganizeFolderFiles_Click(object sender, EventArgs e)
         {
             CleanListBoxLog();
 
-            m_toolkit.OrganizePhotoLibrary(txtOrganizationTarget.Text, chkReviewBeforeApplying.Checked, chkIncludeSubfolders.Checked, chkSetDateForAllFiles.Checked, PerformRenamingReview);
+            _toolkit.OrganizePhotoLibrary(txtOrganizationTarget.Text, chkReviewBeforeApplying.Checked, chkIncludeSubfolders.Checked, chkSetDateForAllFiles.Checked, PerformRenamingReview);
         }
 
-        public bool PerformRenamingReview(PhotoLibraryMap dataSource)
+        private void btnCloneSourceFolderSelect_Click(object sender, EventArgs e)
         {
-            return new RenamePreview(dataSource).ShowDialog() == DialogResult.OK;
+            ChooseFolderFor(p => txtSourcePathForClone.Text = p);
         }
 
-        private void btnTransferFiles_Click(object sender, EventArgs e)
+        private void btnCloneTargetFolderSelect_Click(object sender, EventArgs e)
         {
-            var d = new FolderBrowserDialog();
-            d.ShowDialog();
+            ChooseFolderFor(p => txtTargetPathForClone.Text = p);
+        }
+
+        private void btnNamingLocationFolderSelect_Click(object sender, EventArgs e)
+        {
+            ChooseFolderFor(p => txtOrganizationTarget.Text = p);
         }
     }
 }

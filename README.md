@@ -13,7 +13,7 @@ For example: ML20110101_120115.jpg for a photo taken on January 1st 2011, at 12:
 ### Supported media formats
 * Photos - jpg, png (reads EXIF information or taken date field)
 * Video - mov, avi, mp4, 3gp (reads Recorded or Encoded dates)
-In case metadata was not provided - falls back to file creation/modification dates and takes the earliest one.
+* In case metadata was not provided - falls back to file creation/modification dates and takes the earliest one.
 
 ### Additional feature - copy taken dates into file creation/modification propeties
 When I encode videos taken on my photo camera they loose their taken dates, so I copy them from original files over into creation/modifications dates. This way autonaming logic can give them proper names later on.

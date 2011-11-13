@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.gbModifyDateClone = new System.Windows.Forms.GroupBox();
+            this.btnCloneTargetFolderSelect = new System.Windows.Forms.Button();
+            this.btnCloneSourceFolderSelect = new System.Windows.Forms.Button();
             this.btnCloneModifyDates = new System.Windows.Forms.Button();
             this.txtTargetExtensionForClone = new System.Windows.Forms.TextBox();
             this.txtSourceExtensionForClone = new System.Windows.Forms.TextBox();
@@ -41,12 +43,14 @@
             this.lbLog = new System.Windows.Forms.ListBox();
             this.lblLog = new System.Windows.Forms.Label();
             this.gbOrganizeFiles = new System.Windows.Forms.GroupBox();
+            this.btnNamingLocationFolderSelect = new System.Windows.Forms.Button();
             this.chkSetDateForAllFiles = new System.Windows.Forms.CheckBox();
             this.chkIncludeSubfolders = new System.Windows.Forms.CheckBox();
             this.chkReviewBeforeApplying = new System.Windows.Forms.CheckBox();
             this.btnOrganizeFolderFiles = new System.Windows.Forms.Button();
             this.txtOrganizationTarget = new System.Windows.Forms.TextBox();
             this.lblOrganizationTarget = new System.Windows.Forms.Label();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.gbModifyDateClone.SuspendLayout();
             this.gbOrganizeFiles.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +59,8 @@
             // 
             this.gbModifyDateClone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbModifyDateClone.Controls.Add(this.btnCloneTargetFolderSelect);
+            this.gbModifyDateClone.Controls.Add(this.btnCloneSourceFolderSelect);
             this.gbModifyDateClone.Controls.Add(this.btnCloneModifyDates);
             this.gbModifyDateClone.Controls.Add(this.txtTargetExtensionForClone);
             this.gbModifyDateClone.Controls.Add(this.txtSourceExtensionForClone);
@@ -69,6 +75,28 @@
             this.gbModifyDateClone.TabIndex = 0;
             this.gbModifyDateClone.TabStop = false;
             this.gbModifyDateClone.Text = "Clone taken dates for files with same name, but different locations";
+            // 
+            // btnCloneTargetFolderSelect
+            // 
+            this.btnCloneTargetFolderSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloneTargetFolderSelect.Location = new System.Drawing.Point(358, 60);
+            this.btnCloneTargetFolderSelect.Name = "btnCloneTargetFolderSelect";
+            this.btnCloneTargetFolderSelect.Size = new System.Drawing.Size(27, 20);
+            this.btnCloneTargetFolderSelect.TabIndex = 9;
+            this.btnCloneTargetFolderSelect.Text = "..";
+            this.btnCloneTargetFolderSelect.UseVisualStyleBackColor = true;
+            this.btnCloneTargetFolderSelect.Click += new System.EventHandler(this.btnCloneTargetFolderSelect_Click);
+            // 
+            // btnCloneSourceFolderSelect
+            // 
+            this.btnCloneSourceFolderSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloneSourceFolderSelect.Location = new System.Drawing.Point(358, 34);
+            this.btnCloneSourceFolderSelect.Name = "btnCloneSourceFolderSelect";
+            this.btnCloneSourceFolderSelect.Size = new System.Drawing.Size(27, 20);
+            this.btnCloneSourceFolderSelect.TabIndex = 8;
+            this.btnCloneSourceFolderSelect.Text = "..";
+            this.btnCloneSourceFolderSelect.UseVisualStyleBackColor = true;
+            this.btnCloneSourceFolderSelect.Click += new System.EventHandler(this.btnCloneSourceFolderSelect_Click);
             // 
             // btnCloneModifyDates
             // 
@@ -115,7 +143,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTargetPathForClone.Location = new System.Drawing.Point(88, 60);
             this.txtTargetPathForClone.Name = "txtTargetPathForClone";
-            this.txtTargetPathForClone.Size = new System.Drawing.Size(297, 20);
+            this.txtTargetPathForClone.Size = new System.Drawing.Size(264, 20);
             this.txtTargetPathForClone.TabIndex = 3;
             // 
             // lblTargetPathForClone
@@ -133,7 +161,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSourcePathForClone.Location = new System.Drawing.Point(88, 34);
             this.txtSourcePathForClone.Name = "txtSourcePathForClone";
-            this.txtSourcePathForClone.Size = new System.Drawing.Size(297, 20);
+            this.txtSourcePathForClone.Size = new System.Drawing.Size(264, 20);
             this.txtSourcePathForClone.TabIndex = 1;
             // 
             // lblSoucePathForClone
@@ -170,6 +198,7 @@
             // 
             this.gbOrganizeFiles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbOrganizeFiles.Controls.Add(this.btnNamingLocationFolderSelect);
             this.gbOrganizeFiles.Controls.Add(this.chkSetDateForAllFiles);
             this.gbOrganizeFiles.Controls.Add(this.chkIncludeSubfolders);
             this.gbOrganizeFiles.Controls.Add(this.chkReviewBeforeApplying);
@@ -182,6 +211,17 @@
             this.gbOrganizeFiles.TabIndex = 3;
             this.gbOrganizeFiles.TabStop = false;
             this.gbOrganizeFiles.Text = "Autoname files based on taken date";
+            // 
+            // btnNamingLocationFolderSelect
+            // 
+            this.btnNamingLocationFolderSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNamingLocationFolderSelect.Location = new System.Drawing.Point(426, 18);
+            this.btnNamingLocationFolderSelect.Name = "btnNamingLocationFolderSelect";
+            this.btnNamingLocationFolderSelect.Size = new System.Drawing.Size(27, 20);
+            this.btnNamingLocationFolderSelect.TabIndex = 11;
+            this.btnNamingLocationFolderSelect.Text = "..";
+            this.btnNamingLocationFolderSelect.UseVisualStyleBackColor = true;
+            this.btnNamingLocationFolderSelect.Click += new System.EventHandler(this.btnNamingLocationFolderSelect_Click);
             // 
             // chkSetDateForAllFiles
             // 
@@ -234,7 +274,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOrganizationTarget.Location = new System.Drawing.Point(88, 19);
             this.txtOrganizationTarget.Name = "txtOrganizationTarget";
-            this.txtOrganizationTarget.Size = new System.Drawing.Size(365, 20);
+            this.txtOrganizationTarget.Size = new System.Drawing.Size(332, 20);
             this.txtOrganizationTarget.TabIndex = 1;
             // 
             // lblOrganizationTarget
@@ -245,6 +285,10 @@
             this.lblOrganizationTarget.Size = new System.Drawing.Size(51, 13);
             this.lblOrganizationTarget.TabIndex = 0;
             this.lblOrganizationTarget.Text = "Location:";
+            // 
+            // folderBrowserDialog
+            // 
+            this.folderBrowserDialog.ShowNewFolderButton = false;
             // 
             // MainForm
             // 
@@ -290,6 +334,10 @@
         private System.Windows.Forms.Label lblOrganizationTarget;
         private System.Windows.Forms.CheckBox chkIncludeSubfolders;
         private System.Windows.Forms.CheckBox chkSetDateForAllFiles;
+        private System.Windows.Forms.Button btnCloneSourceFolderSelect;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
+        private System.Windows.Forms.Button btnCloneTargetFolderSelect;
+        private System.Windows.Forms.Button btnNamingLocationFolderSelect;
     }
 }
 
