@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PhotoLibraryMap" targetNamespace="http://tempuri.org/PhotoLibraryMap.xsd" xmlns:mstns="http://tempuri.org/PhotoLibraryMap.xsd" xmlns="http://tempuri.org/PhotoLibraryMap.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PhotoLibraryMap" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PhotoLibraryMap" msprop:Generator_UserDSName="PhotoLibraryMap">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RenamingQueue" msdata:Locale="uk-UA" msprop:Generator_TableClassName="RenamingQueueDataTable" msprop:Generator_TableVarName="tableRenamingQueue" msprop:Generator_TablePropName="RenamingQueue" msprop:Generator_RowDeletingName="RenamingQueueRowDeleting" msprop:Generator_UserTableName="RenamingQueue" msprop:Generator_RowChangingName="RenamingQueueRowChanging" msprop:Generator_RowEvHandlerName="RenamingQueueRowChangeEventHandler" msprop:Generator_RowDeletedName="RenamingQueueRowDeleted" msprop:Generator_RowEvArgName="RenamingQueueRowChangeEvent" msprop:Generator_RowChangedName="RenamingQueueRowChanged" msprop:Generator_RowClassName="RenamingQueueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FileLocation" msprop:Generator_ColumnVarNameInTable="columnFileLocation" msprop:Generator_ColumnPropNameInRow="FileLocation" msprop:Generator_ColumnPropNameInTable="FileLocationColumn" msprop:Generator_UserColumnName="FileLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="CurrentFileName" msprop:Generator_ColumnVarNameInTable="columnCurrentFileName" msprop:Generator_ColumnPropNameInRow="CurrentFileName" msprop:Generator_ColumnPropNameInTable="CurrentFileNameColumn" msprop:Generator_UserColumnName="CurrentFileName" type="xs:string" minOccurs="0" />
+              <xs:element name="NewFileName" msprop:Generator_ColumnVarNameInTable="columnNewFileName" msprop:Generator_ColumnPropNameInRow="NewFileName" msprop:Generator_ColumnPropNameInTable="NewFileNameColumn" msprop:Generator_UserColumnName="NewFileName" type="xs:string" minOccurs="0" />
+              <xs:element name="RenameFlag" msprop:Generator_ColumnVarNameInTable="columnRenameFlag" msprop:Generator_ColumnPropNameInRow="RenameFlag" msprop:Generator_ColumnPropNameInTable="RenameFlagColumn" msprop:Generator_UserColumnName="RenameFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TakenDate" msprop:Generator_ColumnVarNameInTable="columnTakenDate" msprop:Generator_ColumnPropNameInRow="TakenDate" msprop:Generator_ColumnPropNameInTable="TakenDateColumn" msprop:Generator_UserColumnName="TakenDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Extension" msprop:Generator_ColumnVarNameInTable="columnExtension" msprop:Generator_ColumnPropNameInRow="Extension" msprop:Generator_ColumnPropNameInTable="ExtensionColumn" msprop:Generator_UserColumnName="Extension" type="xs:string" minOccurs="0" />
+              <xs:element name="DuplicateFlag" msprop:Generator_ColumnVarNameInTable="columnDuplicateFlag" msprop:Generator_ColumnPropNameInRow="DuplicateFlag" msprop:Generator_ColumnPropNameInTable="DuplicateFlagColumn" msprop:Generator_UserColumnName="DuplicateFlag" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
