@@ -117,137 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;gbOrganizeFiles.Name" xml:space="preserve">
-    <value>gbOrganizeFiles</value>
-  </data>
-  <data name="&gt;&gt;chkIncludeSubfolders.Name" xml:space="preserve">
-    <value>chkIncludeSubfolders</value>
-  </data>
-  <data name="&gt;&gt;chkIncludeSubfolders.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnOrganizeFolderFiles.Text" xml:space="preserve">
-    <value>Autoname</value>
-  </data>
-  <data name="&gt;&gt;btnCloneModifyDates.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="&gt;&gt;lblFileExtensionForClone.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btnNamingLocationFolderSelect.Name" xml:space="preserve">
-    <value>btnNamingLocationFolderSelect</value>
-  </data>
-  <data name="&gt;&gt;lblTargetPathForClone.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;txtTargetExtensionForClone.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="gbOrganizeFiles.Text" xml:space="preserve">
-    <value>Autoname files based on taken date</value>
-  </data>
-  <data name="lblTargetPathForClone.Text" xml:space="preserve">
-    <value>Destination:</value>
-  </data>
-  <data name="&gt;&gt;txtTargetExtensionForClone.Name" xml:space="preserve">
-    <value>txtTargetExtensionForClone</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblFileExtensionForClone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;lblFileExtensionForClone.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="&gt;&gt;chkSetDateForAllFiles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnOrganizeFolderFiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>465, 34</value>
-  </data>
-  <data name="btnCloneTargetFolderSelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 60</value>
-  </data>
-  <data name="gbModifyDateClone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="btnNamingLocationFolderSelect.Text" xml:space="preserve">
-    <value>..</value>
-  </data>
-  <data name="lblTargetPathForClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 63</value>
+  <data name="TakenDate.HeaderText" xml:space="preserve">
+    <value>Дата знімання</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnNamingLocationFolderSelect.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="TakenDate.Width" type="System.Int32, mscorlib">
+    <value>98</value>
   </data>
-  <data name="txtTargetExtensionForClone.Text" xml:space="preserve">
-    <value>mp4</value>
+  <data name="fileLocationDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Розташування</value>
   </data>
-  <data name="btnOrganizeFolderFiles.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="currentFileNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Ім'я</value>
   </data>
-  <data name="&gt;&gt;btnNamingLocationFolderSelect.Parent" xml:space="preserve">
-    <value>gbOrganizeFiles</value>
+  <data name="currentFileNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
-  <data name="&gt;&gt;gbOrganizeFiles.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="newFileNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Нове ім'я</value>
   </data>
-  <data name="&gt;&gt;chkSetDateForAllFiles.Parent" xml:space="preserve">
-    <value>gbOrganizeFiles</value>
+  <data name="newFileNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>73</value>
   </data>
-  <data name="lblLog.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="Extension.HeaderText" xml:space="preserve">
+    <value>Тип</value>
   </data>
-  <data name="chkIncludeSubfolders.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="Extension.Width" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
-  <data name="&gt;&gt;lblSoucePathForClone.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
+  <data name="renameFlagDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Змінити</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Photo library tools</value>
+  <data name="renameFlagDataGridViewCheckBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>72</value>
   </data>
-  <data name="lblOrganizationTarget.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="DuplicateFlag.HeaderText" xml:space="preserve">
+    <value>Дублікат</value>
   </data>
-  <data name="txtOrganizationTarget.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="DuplicateFlag.Width" type="System.Int32, mscorlib">
+    <value>77</value>
   </data>
-  <data name="txtSourcePathForClone.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>Підтвердити</value>
   </data>
-  <data name="&gt;&gt;btnCloneModifyDates.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Відмінити</value>
   </data>
-  <data name="&gt;&gt;txtSourcePathForClone.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkHideNonRenaming.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 17</value>
   </data>
-  <data name="chkReviewBeforeApplying.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblLog.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;txtTargetPathForClone.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblSoucePathForClone.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnCloneTargetFolderSelect.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblFileExtensionForClone.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="chkHideNonRenaming.Text" xml:space="preserve">
+    <value>Сховати файли, що не зміняться</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1665,472 +1586,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAA=
 </value>
   </data>
-  <data name="&gt;&gt;btnOrganizeFolderFiles.Parent" xml:space="preserve">
-    <value>gbOrganizeFiles</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Перегляд нових імен</value>
   </data>
-  <data name="txtOrganizationTarget.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 20</value>
-  </data>
-  <data name="&gt;&gt;txtOrganizationTarget.Parent" xml:space="preserve">
-    <value>gbOrganizeFiles</value>
-  </data>
-  <data name="txtSourceExtensionForClone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;txtTargetExtensionForClone.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="btnNamingLocationFolderSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 20</value>
-  </data>
-  <data name="lblOrganizationTarget.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;chkReviewBeforeApplying.Name" xml:space="preserve">
-    <value>chkReviewBeforeApplying</value>
-  </data>
-  <data name="btnCloneTargetFolderSelect.Text" xml:space="preserve">
-    <value>..</value>
-  </data>
-  <data name="&gt;&gt;lblTargetPathForClone.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="lblSoucePathForClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 37</value>
-  </data>
-  <data name="chkReviewBeforeApplying.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblOrganizationTarget.Text" xml:space="preserve">
-    <value>Location:</value>
-  </data>
-  <data name="lblFileExtensionForClone.Text" xml:space="preserve">
-    <value>Extension</value>
-  </data>
-  <data name="txtSourcePathForClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 34</value>
-  </data>
-  <data name="&gt;&gt;btnCloneSourceFolderSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblSoucePathForClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
-  </data>
-  <data name="btnOrganizeFolderFiles.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnCloneSourceFolderSelect.Text" xml:space="preserve">
-    <value>..</value>
-  </data>
-  <data name="&gt;&gt;txtTargetPathForClone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblSoucePathForClone.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnCloneModifyDates.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtSourceExtensionForClone.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btnCloneModifyDates.Name" xml:space="preserve">
-    <value>btnCloneModifyDates</value>
-  </data>
-  <data name="btnCloneTargetFolderSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="btnCloneModifyDates.Location" type="System.Drawing.Point, System.Drawing">
-    <value>465, 34</value>
-  </data>
-  <data name="&gt;&gt;chkReviewBeforeApplying.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;gbModifyDateClone.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnOrganizeFolderFiles.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnNamingLocationFolderSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;gbModifyDateClone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblOrganizationTarget.Parent" xml:space="preserve">
-    <value>gbOrganizeFiles</value>
-  </data>
-  <data name="chkIncludeSubfolders.Text" xml:space="preserve">
-    <value>Include subfolders</value>
-  </data>
-  <data name="chkSetDateForAllFiles.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblLog.Name" xml:space="preserve">
-    <value>lblLog</value>
-  </data>
-  <data name="&gt;&gt;chkIncludeSubfolders.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnNamingLocationFolderSelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 18</value>
-  </data>
-  <data name="&gt;&gt;lblTargetPathForClone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gbModifyDateClone.Text" xml:space="preserve">
-    <value>Clone taken dates for files with same name, but different locations</value>
-  </data>
-  <data name="&gt;&gt;txtSourceExtensionForClone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbOrganizeFiles.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>615, 372</value>
-  </data>
-  <data name="txtTargetPathForClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 20</value>
-  </data>
-  <data name="&gt;&gt;lblOrganizationTarget.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;txtTargetPathForClone.Name" xml:space="preserve">
-    <value>txtTargetPathForClone</value>
-  </data>
-  <data name="btnCloneSourceFolderSelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 34</value>
-  </data>
-  <data name="txtTargetPathForClone.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="chkSetDateForAllFiles.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="gbModifyDateClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="lblOrganizationTarget.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
-  </data>
-  <data name="txtSourcePathForClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 20</value>
-  </data>
-  <data name="gbOrganizeFiles.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="lbLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>575, 95</value>
-  </data>
-  <data name="&gt;&gt;gbModifyDateClone.Name" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="&gt;&gt;folderBrowserDialog.Name" xml:space="preserve">
-    <value>folderBrowserDialog</value>
-  </data>
-  <data name="&gt;&gt;lblOrganizationTarget.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbModifyDateClone.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chkIncludeSubfolders.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txtSourcePathForClone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
-  <data name="lbLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 227</value>
-  </data>
-  <data name="lblTargetPathForClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 13</value>
-  </data>
-  <data name="&gt;&gt;txtOrganizationTarget.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblLog.Text" xml:space="preserve">
-    <value>Activity log</value>
-  </data>
-  <data name="&gt;&gt;lblTargetPathForClone.Name" xml:space="preserve">
-    <value>lblTargetPathForClone</value>
-  </data>
-  <data name="chkReviewBeforeApplying.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 46</value>
-  </data>
-  <data name="txtOrganizationTarget.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;btnCloneModifyDates.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="txtOrganizationTarget.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 19</value>
-  </data>
-  <data name="&gt;&gt;chkSetDateForAllFiles.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtSourcePathForClone.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="chkSetDateForAllFiles.Text" xml:space="preserve">
-    <value>Force file date change for all files</value>
-  </data>
-  <data name="&gt;&gt;lblFileExtensionForClone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCloneSourceFolderSelect.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnOrganizeFolderFiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 46</value>
-  </data>
-  <data name="&gt;&gt;lblSoucePathForClone.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="txtTargetPathForClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 60</value>
-  </data>
-  <data name="btnCloneTargetFolderSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 20</value>
-  </data>
-  <data name="&gt;&gt;btnNamingLocationFolderSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtSourceExtensionForClone.Name" xml:space="preserve">
-    <value>txtSourceExtensionForClone</value>
-  </data>
-  <data name="&gt;&gt;txtSourcePathForClone.Name" xml:space="preserve">
-    <value>txtSourcePathForClone</value>
-  </data>
-  <data name="btnCloneSourceFolderSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 20</value>
-  </data>
-  <data name="txtTargetExtensionForClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 60</value>
-  </data>
-  <data name="&gt;&gt;txtTargetExtensionForClone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkReviewBeforeApplying.Parent" xml:space="preserve">
-    <value>gbOrganizeFiles</value>
-  </data>
-  <data name="&gt;&gt;chkReviewBeforeApplying.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtOrganizationTarget.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtSourceExtensionForClone.Text" xml:space="preserve">
-    <value>avi</value>
-  </data>
-  <data name="chkSetDateForAllFiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 46</value>
-  </data>
-  <data name="txtTargetExtensionForClone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;folderBrowserDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblOrganizationTarget.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 22</value>
-  </data>
-  <data name="&gt;&gt;btnNamingLocationFolderSelect.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gbModifyDateClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>575, 95</value>
-  </data>
-  <data name="chkReviewBeforeApplying.Text" xml:space="preserve">
-    <value>Preview before applying</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="&gt;&gt;lbLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chkSetDateForAllFiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 17</value>
-  </data>
-  <data name="&gt;&gt;txtTargetPathForClone.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="&gt;&gt;btnOrganizeFolderFiles.Name" xml:space="preserve">
-    <value>btnOrganizeFolderFiles</value>
-  </data>
-  <data name="lbLog.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblLog.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblFileExtensionForClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
-  </data>
-  <data name="&gt;&gt;btnCloneTargetFolderSelect.Name" xml:space="preserve">
-    <value>btnCloneTargetFolderSelect</value>
-  </data>
-  <data name="lblSoucePathForClone.Text" xml:space="preserve">
-    <value>Source:</value>
-  </data>
-  <data name="&gt;&gt;lblFileExtensionForClone.Name" xml:space="preserve">
-    <value>lblFileExtensionForClone</value>
-  </data>
-  <data name="&gt;&gt;chkIncludeSubfolders.Parent" xml:space="preserve">
-    <value>gbOrganizeFiles</value>
-  </data>
-  <data name="&gt;&gt;lblLog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtSourcePathForClone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="lblFileExtensionForClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 16</value>
-  </data>
-  <data name="&gt;&gt;btnOrganizeFolderFiles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtTargetExtensionForClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
-  </data>
-  <data name="lblLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="txtSourceExtensionForClone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 34</value>
-  </data>
-  <data name="&gt;&gt;txtOrganizationTarget.Name" xml:space="preserve">
-    <value>txtOrganizationTarget</value>
-  </data>
-  <data name="btnCloneModifyDates.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 46</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>599, 334</value>
-  </data>
-  <data name="&gt;&gt;gbOrganizeFiles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chkIncludeSubfolders.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 17</value>
-  </data>
-  <data name="&gt;&gt;lbLog.Name" xml:space="preserve">
-    <value>lbLog</value>
-  </data>
-  <data name="&gt;&gt;btnCloneTargetFolderSelect.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="&gt;&gt;chkSetDateForAllFiles.Name" xml:space="preserve">
-    <value>chkSetDateForAllFiles</value>
-  </data>
-  <data name="btnCloneSourceFolderSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="btnCloneModifyDates.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;lbLog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="chkReviewBeforeApplying.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 17</value>
-  </data>
-  <data name="&gt;&gt;lblSoucePathForClone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gbOrganizeFiles.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;lblLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnCloneModifyDates.Text" xml:space="preserve">
-    <value>Clone dates</value>
-  </data>
-  <data name="lblFileExtensionForClone.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblOrganizationTarget.Name" xml:space="preserve">
-    <value>lblOrganizationTarget</value>
-  </data>
-  <data name="gbModifyDateClone.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnCloneTargetFolderSelect.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="chkIncludeSubfolders.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 69</value>
-  </data>
-  <data name="&gt;&gt;lbLog.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnCloneSourceFolderSelect.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="gbOrganizeFiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>575, 95</value>
-  </data>
-  <data name="txtTargetPathForClone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;txtSourceExtensionForClone.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtSourceExtensionForClone.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="&gt;&gt;btnCloneTargetFolderSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCloneSourceFolderSelect.Name" xml:space="preserve">
-    <value>btnCloneSourceFolderSelect</value>
-  </data>
-  <data name="txtSourceExtensionForClone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
-  </data>
-  <data name="lblTargetPathForClone.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnCloneSourceFolderSelect.Parent" xml:space="preserve">
-    <value>gbModifyDateClone</value>
-  </data>
-  <data name="txtTargetExtensionForClone.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="gbOrganizeFiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 113</value>
-  </data>
-  <data name="lblLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 211</value>
-  </data>
-  <data name="&gt;&gt;lblSoucePathForClone.Name" xml:space="preserve">
-    <value>lblSoucePathForClone</value>
-  </data>
-  <data name="lblTargetPathForClone.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>uk</value>
-  </metadata>
-  <metadata name="folderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

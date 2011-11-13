@@ -50,11 +50,9 @@
             // 
             // dgwRenaming
             // 
+            resources.ApplyResources(this.dgwRenaming, "dgwRenaming");
             this.dgwRenaming.AllowUserToAddRows = false;
             this.dgwRenaming.AllowUserToOrderColumns = true;
-            this.dgwRenaming.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgwRenaming.AutoGenerateColumns = false;
             this.dgwRenaming.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgwRenaming.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -67,10 +65,7 @@
             this.renameFlagDataGridViewCheckBoxColumn,
             this.DuplicateFlag});
             this.dgwRenaming.DataSource = this.photoLibraryMapBindingSource;
-            this.dgwRenaming.Location = new System.Drawing.Point(1, 2);
             this.dgwRenaming.Name = "dgwRenaming";
-            this.dgwRenaming.Size = new System.Drawing.Size(1170, 563);
-            this.dgwRenaming.TabIndex = 0;
             this.dgwRenaming.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgwRenaming_CellFormatting);
             // 
             // photoLibraryMapBindingSource
@@ -87,36 +82,24 @@
             // 
             // btnOK
             // 
-            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.btnOK, "btnOK");
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(983, 578);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(94, 23);
-            this.btnOK.TabIndex = 1;
-            this.btnOK.Text = "Apply";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(1083, 578);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // chkHideNonRenaming
             // 
-            this.chkHideNonRenaming.AutoSize = true;
+            resources.ApplyResources(this.chkHideNonRenaming, "chkHideNonRenaming");
             this.chkHideNonRenaming.Checked = true;
             this.chkHideNonRenaming.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkHideNonRenaming.Location = new System.Drawing.Point(12, 571);
             this.chkHideNonRenaming.Name = "chkHideNonRenaming";
-            this.chkHideNonRenaming.Size = new System.Drawing.Size(126, 17);
-            this.chkHideNonRenaming.TabIndex = 3;
-            this.chkHideNonRenaming.Text = "Hide unchanged files";
             this.chkHideNonRenaming.UseVisualStyleBackColor = true;
             this.chkHideNonRenaming.CheckedChanged += new System.EventHandler(this.chkHideNonRenaming_CheckedChanged);
             // 
@@ -124,73 +107,63 @@
             // 
             this.TakenDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.TakenDate.DataPropertyName = "TakenDate";
-            this.TakenDate.HeaderText = "Date taken";
+            resources.ApplyResources(this.TakenDate, "TakenDate");
             this.TakenDate.Name = "TakenDate";
-            this.TakenDate.Width = 85;
             // 
             // fileLocationDataGridViewTextBoxColumn
             // 
             this.fileLocationDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.fileLocationDataGridViewTextBoxColumn.DataPropertyName = "FileLocation";
-            this.fileLocationDataGridViewTextBoxColumn.HeaderText = "Location";
+            resources.ApplyResources(this.fileLocationDataGridViewTextBoxColumn, "fileLocationDataGridViewTextBoxColumn");
             this.fileLocationDataGridViewTextBoxColumn.Name = "fileLocationDataGridViewTextBoxColumn";
             // 
             // currentFileNameDataGridViewTextBoxColumn
             // 
             this.currentFileNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.currentFileNameDataGridViewTextBoxColumn.DataPropertyName = "CurrentFileName";
-            this.currentFileNameDataGridViewTextBoxColumn.HeaderText = "Current name";
+            resources.ApplyResources(this.currentFileNameDataGridViewTextBoxColumn, "currentFileNameDataGridViewTextBoxColumn");
             this.currentFileNameDataGridViewTextBoxColumn.Name = "currentFileNameDataGridViewTextBoxColumn";
-            this.currentFileNameDataGridViewTextBoxColumn.Width = 95;
             // 
             // newFileNameDataGridViewTextBoxColumn
             // 
             this.newFileNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.newFileNameDataGridViewTextBoxColumn.DataPropertyName = "NewFileName";
-            this.newFileNameDataGridViewTextBoxColumn.HeaderText = "New name";
+            resources.ApplyResources(this.newFileNameDataGridViewTextBoxColumn, "newFileNameDataGridViewTextBoxColumn");
             this.newFileNameDataGridViewTextBoxColumn.Name = "newFileNameDataGridViewTextBoxColumn";
-            this.newFileNameDataGridViewTextBoxColumn.Width = 83;
             // 
             // Extension
             // 
             this.Extension.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Extension.DataPropertyName = "Extension";
-            this.Extension.HeaderText = "Extension";
+            resources.ApplyResources(this.Extension, "Extension");
             this.Extension.Name = "Extension";
-            this.Extension.Width = 78;
             // 
             // renameFlagDataGridViewCheckBoxColumn
             // 
             this.renameFlagDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.renameFlagDataGridViewCheckBoxColumn.DataPropertyName = "RenameFlag";
-            this.renameFlagDataGridViewCheckBoxColumn.HeaderText = "Include in renaming";
+            resources.ApplyResources(this.renameFlagDataGridViewCheckBoxColumn, "renameFlagDataGridViewCheckBoxColumn");
             this.renameFlagDataGridViewCheckBoxColumn.Name = "renameFlagDataGridViewCheckBoxColumn";
             this.renameFlagDataGridViewCheckBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.renameFlagDataGridViewCheckBoxColumn.Width = 114;
             // 
             // DuplicateFlag
             // 
             this.DuplicateFlag.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.DuplicateFlag.DataPropertyName = "DuplicateFlag";
-            this.DuplicateFlag.HeaderText = "Duplicate taken date";
+            resources.ApplyResources(this.DuplicateFlag, "DuplicateFlag");
             this.DuplicateFlag.Name = "DuplicateFlag";
             this.DuplicateFlag.ReadOnly = true;
             this.DuplicateFlag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.DuplicateFlag.Width = 101;
             // 
             // RenamePreview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 613);
             this.Controls.Add(this.chkHideNonRenaming);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dgwRenaming);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RenamePreview";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Preview new file names";
             ((System.ComponentModel.ISupportInitialize)(this.dgwRenaming)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.photoLibraryMapBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.photoLibraryMap)).EndInit();

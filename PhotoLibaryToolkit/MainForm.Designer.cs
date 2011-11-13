@@ -57,8 +57,7 @@
             // 
             // gbModifyDateClone
             // 
-            this.gbModifyDateClone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.gbModifyDateClone, "gbModifyDateClone");
             this.gbModifyDateClone.Controls.Add(this.btnCloneTargetFolderSelect);
             this.gbModifyDateClone.Controls.Add(this.btnCloneSourceFolderSelect);
             this.gbModifyDateClone.Controls.Add(this.btnCloneModifyDates);
@@ -69,135 +68,79 @@
             this.gbModifyDateClone.Controls.Add(this.lblTargetPathForClone);
             this.gbModifyDateClone.Controls.Add(this.txtSourcePathForClone);
             this.gbModifyDateClone.Controls.Add(this.lblSoucePathForClone);
-            this.gbModifyDateClone.Location = new System.Drawing.Point(12, 12);
             this.gbModifyDateClone.Name = "gbModifyDateClone";
-            this.gbModifyDateClone.Size = new System.Drawing.Size(575, 95);
-            this.gbModifyDateClone.TabIndex = 0;
             this.gbModifyDateClone.TabStop = false;
-            this.gbModifyDateClone.Text = "Clone taken dates for files with same name, but different locations";
             // 
             // btnCloneTargetFolderSelect
             // 
-            this.btnCloneTargetFolderSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloneTargetFolderSelect.Location = new System.Drawing.Point(358, 60);
+            resources.ApplyResources(this.btnCloneTargetFolderSelect, "btnCloneTargetFolderSelect");
             this.btnCloneTargetFolderSelect.Name = "btnCloneTargetFolderSelect";
-            this.btnCloneTargetFolderSelect.Size = new System.Drawing.Size(27, 20);
-            this.btnCloneTargetFolderSelect.TabIndex = 9;
-            this.btnCloneTargetFolderSelect.Text = "..";
             this.btnCloneTargetFolderSelect.UseVisualStyleBackColor = true;
             this.btnCloneTargetFolderSelect.Click += new System.EventHandler(this.btnCloneTargetFolderSelect_Click);
             // 
             // btnCloneSourceFolderSelect
             // 
-            this.btnCloneSourceFolderSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloneSourceFolderSelect.Location = new System.Drawing.Point(358, 34);
+            resources.ApplyResources(this.btnCloneSourceFolderSelect, "btnCloneSourceFolderSelect");
             this.btnCloneSourceFolderSelect.Name = "btnCloneSourceFolderSelect";
-            this.btnCloneSourceFolderSelect.Size = new System.Drawing.Size(27, 20);
-            this.btnCloneSourceFolderSelect.TabIndex = 8;
-            this.btnCloneSourceFolderSelect.Text = "..";
             this.btnCloneSourceFolderSelect.UseVisualStyleBackColor = true;
             this.btnCloneSourceFolderSelect.Click += new System.EventHandler(this.btnCloneSourceFolderSelect_Click);
             // 
             // btnCloneModifyDates
             // 
-            this.btnCloneModifyDates.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloneModifyDates.Location = new System.Drawing.Point(465, 34);
+            resources.ApplyResources(this.btnCloneModifyDates, "btnCloneModifyDates");
             this.btnCloneModifyDates.Name = "btnCloneModifyDates";
-            this.btnCloneModifyDates.Size = new System.Drawing.Size(92, 46);
-            this.btnCloneModifyDates.TabIndex = 7;
-            this.btnCloneModifyDates.Text = "Clone dates";
             this.btnCloneModifyDates.UseVisualStyleBackColor = true;
             this.btnCloneModifyDates.Click += new System.EventHandler(this.btnCloneModifyDates_Click);
             // 
             // txtTargetExtensionForClone
             // 
-            this.txtTargetExtensionForClone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTargetExtensionForClone.Location = new System.Drawing.Point(393, 60);
+            resources.ApplyResources(this.txtTargetExtensionForClone, "txtTargetExtensionForClone");
             this.txtTargetExtensionForClone.Name = "txtTargetExtensionForClone";
-            this.txtTargetExtensionForClone.Size = new System.Drawing.Size(60, 20);
-            this.txtTargetExtensionForClone.TabIndex = 6;
-            this.txtTargetExtensionForClone.Text = "mp4";
             // 
             // txtSourceExtensionForClone
             // 
-            this.txtSourceExtensionForClone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSourceExtensionForClone.Location = new System.Drawing.Point(393, 34);
+            resources.ApplyResources(this.txtSourceExtensionForClone, "txtSourceExtensionForClone");
             this.txtSourceExtensionForClone.Name = "txtSourceExtensionForClone";
-            this.txtSourceExtensionForClone.Size = new System.Drawing.Size(60, 20);
-            this.txtSourceExtensionForClone.TabIndex = 5;
-            this.txtSourceExtensionForClone.Text = "avi";
             // 
             // lblFileExtensionForClone
             // 
-            this.lblFileExtensionForClone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblFileExtensionForClone.AutoSize = true;
-            this.lblFileExtensionForClone.Location = new System.Drawing.Point(389, 16);
+            resources.ApplyResources(this.lblFileExtensionForClone, "lblFileExtensionForClone");
             this.lblFileExtensionForClone.Name = "lblFileExtensionForClone";
-            this.lblFileExtensionForClone.Size = new System.Drawing.Size(53, 13);
-            this.lblFileExtensionForClone.TabIndex = 4;
-            this.lblFileExtensionForClone.Text = "Extension";
             // 
             // txtTargetPathForClone
             // 
-            this.txtTargetPathForClone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTargetPathForClone.Location = new System.Drawing.Point(88, 60);
+            resources.ApplyResources(this.txtTargetPathForClone, "txtTargetPathForClone");
             this.txtTargetPathForClone.Name = "txtTargetPathForClone";
-            this.txtTargetPathForClone.Size = new System.Drawing.Size(264, 20);
-            this.txtTargetPathForClone.TabIndex = 3;
             // 
             // lblTargetPathForClone
             // 
-            this.lblTargetPathForClone.AutoSize = true;
-            this.lblTargetPathForClone.Location = new System.Drawing.Point(5, 63);
+            resources.ApplyResources(this.lblTargetPathForClone, "lblTargetPathForClone");
             this.lblTargetPathForClone.Name = "lblTargetPathForClone";
-            this.lblTargetPathForClone.Size = new System.Drawing.Size(63, 13);
-            this.lblTargetPathForClone.TabIndex = 2;
-            this.lblTargetPathForClone.Text = "Destination:";
             // 
             // txtSourcePathForClone
             // 
-            this.txtSourcePathForClone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSourcePathForClone.Location = new System.Drawing.Point(88, 34);
+            resources.ApplyResources(this.txtSourcePathForClone, "txtSourcePathForClone");
             this.txtSourcePathForClone.Name = "txtSourcePathForClone";
-            this.txtSourcePathForClone.Size = new System.Drawing.Size(264, 20);
-            this.txtSourcePathForClone.TabIndex = 1;
             // 
             // lblSoucePathForClone
             // 
-            this.lblSoucePathForClone.AutoSize = true;
-            this.lblSoucePathForClone.Location = new System.Drawing.Point(5, 37);
+            resources.ApplyResources(this.lblSoucePathForClone, "lblSoucePathForClone");
             this.lblSoucePathForClone.Name = "lblSoucePathForClone";
-            this.lblSoucePathForClone.Size = new System.Drawing.Size(44, 13);
-            this.lblSoucePathForClone.TabIndex = 0;
-            this.lblSoucePathForClone.Text = "Source:";
             // 
             // lbLog
             // 
-            this.lbLog.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.lbLog, "lbLog");
             this.lbLog.FormattingEnabled = true;
-            this.lbLog.Location = new System.Drawing.Point(12, 227);
             this.lbLog.Name = "lbLog";
-            this.lbLog.Size = new System.Drawing.Size(575, 95);
-            this.lbLog.TabIndex = 1;
             // 
             // lblLog
             // 
-            this.lblLog.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLog.AutoSize = true;
-            this.lblLog.Location = new System.Drawing.Point(12, 211);
+            resources.ApplyResources(this.lblLog, "lblLog");
             this.lblLog.Name = "lblLog";
-            this.lblLog.Size = new System.Drawing.Size(58, 13);
-            this.lblLog.TabIndex = 2;
-            this.lblLog.Text = "Activity log";
             // 
             // gbOrganizeFiles
             // 
-            this.gbOrganizeFiles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.gbOrganizeFiles, "gbOrganizeFiles");
             this.gbOrganizeFiles.Controls.Add(this.btnNamingLocationFolderSelect);
             this.gbOrganizeFiles.Controls.Add(this.chkSetDateForAllFiles);
             this.gbOrganizeFiles.Controls.Add(this.chkIncludeSubfolders);
@@ -205,105 +148,69 @@
             this.gbOrganizeFiles.Controls.Add(this.btnOrganizeFolderFiles);
             this.gbOrganizeFiles.Controls.Add(this.txtOrganizationTarget);
             this.gbOrganizeFiles.Controls.Add(this.lblOrganizationTarget);
-            this.gbOrganizeFiles.Location = new System.Drawing.Point(12, 113);
             this.gbOrganizeFiles.Name = "gbOrganizeFiles";
-            this.gbOrganizeFiles.Size = new System.Drawing.Size(575, 95);
-            this.gbOrganizeFiles.TabIndex = 3;
             this.gbOrganizeFiles.TabStop = false;
-            this.gbOrganizeFiles.Text = "Autoname files based on taken date";
             // 
             // btnNamingLocationFolderSelect
             // 
-            this.btnNamingLocationFolderSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNamingLocationFolderSelect.Location = new System.Drawing.Point(426, 18);
+            resources.ApplyResources(this.btnNamingLocationFolderSelect, "btnNamingLocationFolderSelect");
             this.btnNamingLocationFolderSelect.Name = "btnNamingLocationFolderSelect";
-            this.btnNamingLocationFolderSelect.Size = new System.Drawing.Size(27, 20);
-            this.btnNamingLocationFolderSelect.TabIndex = 11;
-            this.btnNamingLocationFolderSelect.Text = "..";
             this.btnNamingLocationFolderSelect.UseVisualStyleBackColor = true;
             this.btnNamingLocationFolderSelect.Click += new System.EventHandler(this.btnNamingLocationFolderSelect_Click);
             // 
             // chkSetDateForAllFiles
             // 
-            this.chkSetDateForAllFiles.AutoSize = true;
-            this.chkSetDateForAllFiles.Location = new System.Drawing.Point(264, 46);
+            resources.ApplyResources(this.chkSetDateForAllFiles, "chkSetDateForAllFiles");
             this.chkSetDateForAllFiles.Name = "chkSetDateForAllFiles";
-            this.chkSetDateForAllFiles.Size = new System.Drawing.Size(181, 17);
-            this.chkSetDateForAllFiles.TabIndex = 10;
-            this.chkSetDateForAllFiles.Text = "Force file date change for all files";
             this.chkSetDateForAllFiles.UseVisualStyleBackColor = true;
             // 
             // chkIncludeSubfolders
             // 
-            this.chkIncludeSubfolders.AutoSize = true;
+            resources.ApplyResources(this.chkIncludeSubfolders, "chkIncludeSubfolders");
             this.chkIncludeSubfolders.Checked = true;
             this.chkIncludeSubfolders.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkIncludeSubfolders.Location = new System.Drawing.Point(88, 69);
             this.chkIncludeSubfolders.Name = "chkIncludeSubfolders";
-            this.chkIncludeSubfolders.Size = new System.Drawing.Size(112, 17);
-            this.chkIncludeSubfolders.TabIndex = 9;
-            this.chkIncludeSubfolders.Text = "Include subfolders";
             this.chkIncludeSubfolders.UseVisualStyleBackColor = true;
             // 
             // chkReviewBeforeApplying
             // 
-            this.chkReviewBeforeApplying.AutoSize = true;
+            resources.ApplyResources(this.chkReviewBeforeApplying, "chkReviewBeforeApplying");
             this.chkReviewBeforeApplying.Checked = true;
             this.chkReviewBeforeApplying.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkReviewBeforeApplying.Location = new System.Drawing.Point(88, 46);
             this.chkReviewBeforeApplying.Name = "chkReviewBeforeApplying";
-            this.chkReviewBeforeApplying.Size = new System.Drawing.Size(139, 17);
-            this.chkReviewBeforeApplying.TabIndex = 8;
-            this.chkReviewBeforeApplying.Text = "Preview before applying";
             this.chkReviewBeforeApplying.UseVisualStyleBackColor = true;
             // 
             // btnOrganizeFolderFiles
             // 
-            this.btnOrganizeFolderFiles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOrganizeFolderFiles.Location = new System.Drawing.Point(465, 34);
+            resources.ApplyResources(this.btnOrganizeFolderFiles, "btnOrganizeFolderFiles");
             this.btnOrganizeFolderFiles.Name = "btnOrganizeFolderFiles";
-            this.btnOrganizeFolderFiles.Size = new System.Drawing.Size(92, 46);
-            this.btnOrganizeFolderFiles.TabIndex = 7;
-            this.btnOrganizeFolderFiles.Text = "Autoname";
             this.btnOrganizeFolderFiles.UseVisualStyleBackColor = true;
             this.btnOrganizeFolderFiles.Click += new System.EventHandler(this.btnOrganizeFolderFiles_Click);
             // 
             // txtOrganizationTarget
             // 
-            this.txtOrganizationTarget.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtOrganizationTarget.Location = new System.Drawing.Point(88, 19);
+            resources.ApplyResources(this.txtOrganizationTarget, "txtOrganizationTarget");
             this.txtOrganizationTarget.Name = "txtOrganizationTarget";
-            this.txtOrganizationTarget.Size = new System.Drawing.Size(332, 20);
-            this.txtOrganizationTarget.TabIndex = 1;
             // 
             // lblOrganizationTarget
             // 
-            this.lblOrganizationTarget.AutoSize = true;
-            this.lblOrganizationTarget.Location = new System.Drawing.Point(5, 22);
+            resources.ApplyResources(this.lblOrganizationTarget, "lblOrganizationTarget");
             this.lblOrganizationTarget.Name = "lblOrganizationTarget";
-            this.lblOrganizationTarget.Size = new System.Drawing.Size(51, 13);
-            this.lblOrganizationTarget.TabIndex = 0;
-            this.lblOrganizationTarget.Text = "Location:";
             // 
             // folderBrowserDialog
             // 
+            resources.ApplyResources(this.folderBrowserDialog, "folderBrowserDialog");
             this.folderBrowserDialog.ShowNewFolderButton = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 334);
             this.Controls.Add(this.gbOrganizeFiles);
             this.Controls.Add(this.lblLog);
             this.Controls.Add(this.lbLog);
             this.Controls.Add(this.gbModifyDateClone);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(615, 372);
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Photo library tools";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.gbModifyDateClone.ResumeLayout(false);
             this.gbModifyDateClone.PerformLayout();
