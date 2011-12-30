@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace PhotoLibaryToolkit.Framework
+﻿namespace PhotoLibaryToolkit.Framework
 {
-    using System.Drawing;
-    using System.Globalization;
-    using System.Threading;
+    using System;
     using PFP.Imaging;
 
     class PhotoMiner : MediaMinerBase
@@ -18,7 +11,7 @@ namespace PhotoLibaryToolkit.Framework
 
         protected override string[] GetFolderSearchPatternsList()
         {
-            return new[] { "*.png", "*.jpg" };
+            return ImageInfo.GetImageExtensions();
         }
 
         protected override DateTime GetTakenDate(string file)

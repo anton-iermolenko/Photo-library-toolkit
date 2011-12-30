@@ -53,6 +53,11 @@ namespace PFP.Imaging
             }
         }
 
+        public static string[] GetImageExtensions()
+        {
+            return new[] { "*.png", "*.jpg" };
+        }
+
         private void BuildPropsHash()
         {
             foreach (PropertyItem property in image.PropertyItems)

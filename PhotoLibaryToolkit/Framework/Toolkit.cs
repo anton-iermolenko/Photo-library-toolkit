@@ -4,8 +4,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using MediaInfoLib;
     using PFP.Imaging;
     using Properties;
 
@@ -26,6 +24,8 @@
                 m_logger.LogFormat(Resources.Toolkit_CloneModificationDates_Found__0__files, originalFiles.Length);
 
                 int numberOfItemsModified = 0;
+                var videoExtensions = VideoInfo.GetVideoExtensions();
+                var imageExtensions = ImageInfo.GetImageExtensions();
 
                 foreach (var originalFile in originalFiles)
                 {
@@ -34,31 +34,13 @@
                     if (File.Exists(convertedFilePath))
                     {
                         DateTime? originalFileDate = null;
-                        var originalFileExtension = Path.GetExtension(originalFile).ToLower();
-                        if (originalFileExtension == ".mov")
+                        var originalFileExtension = "*" + Path.GetExtension(originalFile).ToLower();
+                        
+                        if (videoExtensions.Contains(originalFileExtension))
                         {
-                            MediaInfo mediaInfo = null;
-                            try
-                            {
-                                mediaInfo = new MediaInfo();
-                                mediaInfo.Open(originalFile);
-
-                                string recordedDate = mediaInfo.Get(StreamKind.General, 0, "Recorded_Date");
-                                originalFileDate = DateTime.Parse(recordedDate);
-                            }
-                            catch (Exception)
-                            {
-
-                            }
-                            finally
-                            {
-                                if (mediaInfo != null)
-                                {
-                                    mediaInfo.Close();
-                                }
-                            }
+                            originalFileDate = VideoInfo.GetVideoFileTakenDate(originalFile);
                         }
-                        else if (originalFileExtension == ".jpg")
+                        else if (imageExtensions.Contains(originalFileExtension))
                         {
                             originalFileDate = ImageInfo.GetTakenDate(originalFile);
                         }

@@ -73,6 +73,7 @@
     </Compile>
     <Compile Include="Framework\PhotoMiner.cs" />
     <Compile Include="Framework\Toolkit.cs" />
+    <Compile Include="Framework\VideoInfo.cs" />
     <Compile Include="Framework\VideoMiner.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
