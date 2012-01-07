@@ -8,7 +8,7 @@ obj
 [Bb]ackup
 [Pp]ublish
 _[Rr]eSharper*
-*.[Rr]eSharper.user
+*.user
 *.suo
 *.cache
 * Thumbs.db
@@ -18,46 +18,6 @@ _[Rr]eSharper*
 ClientBin
 *.docstates
 
-# Other useful stuff
-*.bak
-*.log
-*.swp
-_compareTemp
-_notes
-aspnet_client
-httpd.parse.errors
-*.orig
-*.docstates
-
-*.vssscc
-*.vspscc
-TestResults
-[Ll]ib/[Ss]taging
-
-Sandbox
-*.suo
-*.*.suo
-*.*.*.suo
-*.user
-*.*.user
-*.*.*.user
+*.build.csdef
 
 [Pp]ackages
-
-UpgradeLog*
-_UpgradeReport*
-
-*.suo
-*.*.suo
-*.*.*.suo
-*.user
-*.*.user
-*.*.*.user
-StreetConnect.Master.5.1.ReSharper.user
-StreetConnect.Master.sln.docstates
-StreetConnect.Master.suo
-
-[Pp]ackages
-
-UpgradeLog*
-_UpgradeReport*
