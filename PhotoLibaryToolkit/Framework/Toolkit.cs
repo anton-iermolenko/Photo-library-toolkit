@@ -92,7 +92,7 @@
                     libraryDataSet.RenamingQueue.AddRenamingQueueRow(row);
                 }
 
-                var duplicateNewFiles = libraryDataSet.RenamingQueue.GroupBy(p => p.TakenDate).Where(x => x.Count() > 1).ToList();
+                var duplicateNewFiles = libraryDataSet.RenamingQueue.GroupBy(p => new {p.TakenDate, p.Extension}).Where(x => x.Count() > 1).ToList();
                 if (duplicateNewFiles.Count > 0)
                 {
                     m_logger.LogFormat(Resources.Toolkit_OrganizePhotoLibrary_Creating_unique_file_names_for__0__duplicates, minedVideoData.Count);

@@ -139,6 +139,9 @@
   <data name="lblSoucePathForClone.Text" xml:space="preserve">
     <value>Джерело:</value>
   </data>
+  <data name="gbModifyDateClone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 112</value>
+  </data>
   <data name="gbModifyDateClone.Text" xml:space="preserve">
     <value>Копіювати дати знімання для файлів з однаковими іменами</value>
   </data>
@@ -147,6 +150,12 @@
   </data>
   <data name="lblLog.Text" xml:space="preserve">
     <value>Події</value>
+  </data>
+  <data name="gbOrganizeFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 10</value>
+  </data>
+  <data name="gbOrganizeFiles.Text" xml:space="preserve">
+    <value>Автоматичне іменування файлів за датою знімання</value>
   </data>
   <data name="chkSetDateForAllFiles.Location" type="System.Drawing.Point, System.Drawing">
     <value>285, 46</value>
@@ -177,9 +186,6 @@
   </data>
   <data name="lblOrganizationTarget.Text" xml:space="preserve">
     <value>Розташування:</value>
-  </data>
-  <data name="gbOrganizeFiles.Text" xml:space="preserve">
-    <value>Автоматичне іменування файлів за датою знімання</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
