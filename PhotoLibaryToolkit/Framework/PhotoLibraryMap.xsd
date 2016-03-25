@@ -12,7 +12,7 @@
   <xs:element name="PhotoLibraryMap" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PhotoLibraryMap" msprop:Generator_UserDSName="PhotoLibraryMap">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="RenamingQueue" msdata:Locale="uk-UA" msprop:Generator_TableClassName="RenamingQueueDataTable" msprop:Generator_TableVarName="tableRenamingQueue" msprop:Generator_TablePropName="RenamingQueue" msprop:Generator_RowDeletingName="RenamingQueueRowDeleting" msprop:Generator_UserTableName="RenamingQueue" msprop:Generator_RowChangingName="RenamingQueueRowChanging" msprop:Generator_RowEvHandlerName="RenamingQueueRowChangeEventHandler" msprop:Generator_RowDeletedName="RenamingQueueRowDeleted" msprop:Generator_RowEvArgName="RenamingQueueRowChangeEvent" msprop:Generator_RowChangedName="RenamingQueueRowChanged" msprop:Generator_RowClassName="RenamingQueueRow">
+        <xs:element name="RenamingQueue" msdata:Locale="uk-UA" msprop:Generator_TableClassName="RenamingQueueDataTable" msprop:Generator_TableVarName="tableRenamingQueue" msprop:Generator_RowChangedName="RenamingQueueRowChanged" msprop:Generator_TablePropName="RenamingQueue" msprop:Generator_RowDeletingName="RenamingQueueRowDeleting" msprop:Generator_RowChangingName="RenamingQueueRowChanging" msprop:Generator_RowEvHandlerName="RenamingQueueRowChangeEventHandler" msprop:Generator_RowDeletedName="RenamingQueueRowDeleted" msprop:Generator_RowClassName="RenamingQueueRow" msprop:Generator_UserTableName="RenamingQueue" msprop:Generator_RowEvArgName="RenamingQueueRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FileLocation" msprop:Generator_ColumnVarNameInTable="columnFileLocation" msprop:Generator_ColumnPropNameInRow="FileLocation" msprop:Generator_ColumnPropNameInTable="FileLocationColumn" msprop:Generator_UserColumnName="FileLocation" type="xs:string" minOccurs="0" />
@@ -22,6 +22,7 @@
               <xs:element name="TakenDate" msprop:Generator_ColumnVarNameInTable="columnTakenDate" msprop:Generator_ColumnPropNameInRow="TakenDate" msprop:Generator_ColumnPropNameInTable="TakenDateColumn" msprop:Generator_UserColumnName="TakenDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="Extension" msprop:Generator_ColumnVarNameInTable="columnExtension" msprop:Generator_ColumnPropNameInRow="Extension" msprop:Generator_ColumnPropNameInTable="ExtensionColumn" msprop:Generator_UserColumnName="Extension" type="xs:string" minOccurs="0" />
               <xs:element name="DuplicateFlag" msprop:Generator_ColumnVarNameInTable="columnDuplicateFlag" msprop:Generator_ColumnPropNameInRow="DuplicateFlag" msprop:Generator_ColumnPropNameInTable="DuplicateFlagColumn" msprop:Generator_UserColumnName="DuplicateFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsPhoto" msprop:Generator_ColumnVarNameInTable="columnIsPhoto" msprop:Generator_ColumnPropNameInRow="IsPhoto" msprop:Generator_ColumnPropNameInTable="IsPhotoColumn" msprop:Generator_UserColumnName="IsPhoto" type="xs:boolean" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

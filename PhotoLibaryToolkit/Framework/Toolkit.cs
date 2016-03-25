@@ -1,4 +1,6 @@
-﻿namespace PhotoLibaryToolkit.Framework
+﻿using System.Windows.Forms.VisualStyles;
+
+namespace PhotoLibaryToolkit.Framework
 {
     using System.IO;
     using System;
@@ -88,6 +90,7 @@
                     row.FileLocation = file.Key;
                     row.TakenDate = file.Value;
                     row.RenameFlag = row.CurrentFileName != row.NewFileName;
+                    row.IsPhoto = minedPhotoData.ContainsKey(file.Key);
 
                     libraryDataSet.RenamingQueue.AddRenamingQueueRow(row);
                 }
@@ -108,6 +111,51 @@
                     }
                 }
 
+                // Ensure linked files (same name, but different extension) get renamed as well
+
+                var allLinkedFiles = Directory
+                    .GetFiles(path, "*", scanSubfolders ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly)
+                    .GroupBy(p => Path.Combine(Path.GetDirectoryName(p), Path.GetFileNameWithoutExtension(p)))
+                    .ToDictionary(g => g.Key, g => g.Select(p => new { FileName = Path.GetFileName(p), Path = p }).ToList());
+                
+                foreach (var linkedFilesInQueue in libraryDataSet.RenamingQueue.GroupBy(p => Path.Combine(Path.GetDirectoryName(p.FileLocation), Path.GetFileNameWithoutExtension(p.FileLocation))))
+                {
+                    var otherLinkedFiles = allLinkedFiles[linkedFilesInQueue.Key]
+                        .Where(p => linkedFilesInQueue.All(lf => lf.FileLocation != p.Path))
+                        .ToList();
+                    var jointLinkedFiles = linkedFilesInQueue.ToList();
+                    var fileNameProto = linkedFilesInQueue.OrderBy(p => p.IsPhoto).First();
+
+                    if (otherLinkedFiles.Count > 0)
+                    {
+                        // Create renaming records for newly recognized linked files
+                        foreach (var otherLinkedFile in otherLinkedFiles)
+                        {
+                            var row = libraryDataSet.RenamingQueue.NewRenamingQueueRow();
+
+                            row.CurrentFileName = Path.GetFileNameWithoutExtension(otherLinkedFile.Path);
+                            row.Extension = Path.GetExtension(otherLinkedFile.Path).ToLower();
+                            row.FileLocation = otherLinkedFile.Path;
+                            row.TakenDate = new[]
+                            {
+                                File.GetCreationTime(otherLinkedFile.Path),
+                                File.GetLastWriteTime(otherLinkedFile.Path)
+                            }.Min();
+                            row.IsPhoto = false;
+
+                            jointLinkedFiles.Add(row);
+                            libraryDataSet.RenamingQueue.AddRenamingQueueRow(row);
+                        }
+                    }
+
+                    // Align new file names
+                    foreach (var jointLinkedFile in jointLinkedFiles)
+                    {
+                        jointLinkedFile.NewFileName = fileNameProto.NewFileName;
+                        // Re-evaluate rename flag
+                        jointLinkedFile.RenameFlag = jointLinkedFile.CurrentFileName != jointLinkedFile.NewFileName;
+                    }
+                }
 
                 if (reviewBeforeApply)
                 {

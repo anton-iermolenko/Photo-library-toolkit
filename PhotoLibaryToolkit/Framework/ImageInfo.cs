@@ -55,7 +55,7 @@ namespace PFP.Imaging
 
         public static string[] GetImageExtensions()
         {
-            return new[] { "*.png", "*.jpg" };
+            return new[] { "*.png", "*.jpg", "*.jpeg", "*.gif" };
         }
 
         private void BuildPropsHash()
